@@ -1,3 +1,4 @@
+To check out the applications visit https://www.stuffbyyc.com/ go to the download section
 # Kivy_Calculator
 
 Requirements
@@ -78,10 +79,7 @@ https://kivy.org/doc/stable/guide/packaging-ios.html
 https://kivy.org/doc/stable/guide/packaging-osx.html
 
 
-
-
-
-
-
-
-
+-------------Applications--------------------------
+https://www.stuffbyyc.com/ 
+Android : https://www.amazon.com/gp/product/B085RZMF6T
+Windows : http://wix.to/xsD9CEc
