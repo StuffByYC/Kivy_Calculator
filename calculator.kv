@@ -1,0 +1,97 @@
+# Custom button 
+<CustButton@Button>: 
+    font_size: 0.6 * root.height 
+    
+<CustInput@TextInput>: 
+    font_size: 0.6 * root.height 
+    
+# class functions 
+# Display points to the entry widget 
+<CalcGridLayout>: 
+    id: calculator 
+    display: Input 
+    rows: 6
+    padding: 0.01 * root.width
+    spacing: 0.01 * root.width
+
+    # Where input is displayed 
+    BoxLayout: 
+        CustInput: 
+            id: Input  
+            multiline: False
+   
+    # When buttons are pressed update the entry 
+    BoxLayout: 
+        spacing: 0.01 * root.width
+        CustButton:
+            text: "7"
+            on_press: Input.text += self.text 
+        CustButton:
+            text: "8"
+            on_press: Input.text += self.text 
+        CustButton:
+            text: "9"
+            on_press: Input.text += self.text 
+        CustButton:
+            text: "+"
+            on_press: Input.text += self.text 
+   
+    BoxLayout: 
+        spacing: 0.01 * root.width
+        CustButton:
+            text: "4"
+            on_press: Input.text += self.text 
+        CustButton:
+            text: "5"
+            on_press: Input.text += self.text 
+        CustButton:
+            text: "6"
+            on_press: Input.text += self.text 
+        CustButton:
+            text: "-"
+            on_press: Input.text += self.text 
+   
+    BoxLayout: 
+        spacing: 0.01 * root.width
+        CustButton:
+            text: "1"
+            on_press: Input.text += self.text 
+        CustButton:
+            text: "2"
+            on_press: Input.text += self.text 
+        CustButton:
+            text: "3"
+            on_press: Input.text += self.text 
+        CustButton:
+            text: "*"
+            on_press: Input.text += self.text 
+   
+    # When equals is pressed pass text in the entry 
+    # to the calculate function 
+    BoxLayout:
+        spacing: 0.01 * root.width
+        CustButton:
+            text: "C"
+            on_press: Input.text = "" 
+        CustButton:
+            text: "0"
+            on_press: Input.text += self.text 
+        BoxLayout:
+            spacing: 0.01 * root.width
+            CustButton:
+                text: "("
+                on_press: Input.text += self.text
+            CustButton:
+                text: ")"
+                on_press: Input.text += self.text  
+        CustButton:
+            text: "/"
+            on_press: Input.text += self.text 
+    BoxLayout:
+        spacing: 0.01 * root.width
+        CustButton:
+            text: "."
+            on_press: Input.text += self.text
+        CustButton:
+            text: "="
+            on_press: calculator.calculate(Input.text) 
