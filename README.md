@@ -20,34 +20,41 @@ Go to the folder where you have you python and kivy file
 ```cmd
 $ buildozer init
 ```
-edit the buildozer.spec, then
+Rename your python file to main.py
+
+*Edit the buildozer.spec*
 
 1. Change Application title
 
-2. rename your python file to main.py
-
-3. Icon -- Remove comment 
+2. Icon -- Remove comment 
+```python
 (str) Icon of the application
 icon.filename = %(source.dir)s/logo.png
+```
 
-4. Presplash -- Remove comment
+3. Presplash -- Remove comment
+```python
 (str) Presplash of the application
 presplash.filename = %(source.dir)s/logo.png
-
+```
 Run below command to run applications
 ```cmd
 $ buildozer android debug deploy run   
 ```
-additional details : https://kivy.org/doc/stable/guide/packaging-windows.html
+**_Output :_**
+![alt text](https://github.com/StuffByYC/Kivy_Calculator/blob/master/Images/Calc1_1980x1080.png "Android_kivy")
+
+
+additional details : (https://kivy.org/doc/stable/guide/packaging-windows.html)
 
 ### ---------------To Create Windows Application from Kivy-------------
 Open CMD in windows 
 ```cmd
-$ pip install PyInstaller
+> pip install PyInstaller
 ```
 Execute below command in the folder where your python, kivy and logo file are present
 ```cmd
-$ PyInstaller --name Calculator@stuffbyyc --icon logo.ico -w main.py
+> PyInstaller --name "Calculator@stuffbyyc" --icon logo.ico -w main.py
 ```
 Edit Collect in ```cmd Calculator@stuffbyyc.spec``` file 
 Create a Folder named Final
@@ -69,8 +76,11 @@ coll = COLLECT(exe, Tree('Final\\'),
 ```              
 Excute command
 ```cmd
-PyInstaller Calculator@stuffbyyc.spec
+> PyInstaller "Calculator@stuffbyyc.spec"
 ```
+**_Output :_**
+![alt text](https://github.com/StuffByYC/Kivy_Calculator/blob/master/Images/Windows_1.png "Windows_kivy")
+
 You can pack you application using Nsis tool
 additional details : https://kivy.org/doc/stable/guide/packaging-android.html
 
