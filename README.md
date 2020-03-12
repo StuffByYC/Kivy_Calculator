@@ -10,7 +10,7 @@ python -m pip install kivy.deps.angle
 python -m pip install pygame
 python -m pip install kivy
 
-#---------------To Create android Application from Kivy-----------------
+## ---------------To Create android Application from Kivy-----------------
 
 $ git clone https://github.com/kivy/buildozer.git
 $ cd buildozer
@@ -38,7 +38,7 @@ $ buildozer android debug deploy run
 
 additional details : https://kivy.org/doc/stable/guide/packaging-windows.html
 
-#---------------To Create Windows Application from Kivy-------------
+## ---------------To Create Windows Application from Kivy-------------
 Open CMD in windows 
 
 $ pip install PyInstaller
@@ -53,6 +53,7 @@ Add below statement to the coll:
 1. Tree('Final\\')
 2. *[Tree(p) for p in (sdl2.dep_bins + glew.dep_bins)]
 
+```python
 The coll will after adding statements
 coll = COLLECT(exe, Tree('Final\\'),
                a.binaries,
@@ -62,7 +63,7 @@ coll = COLLECT(exe, Tree('Final\\'),
                strip=False,
                upx=True,
                name='Calculator@stuffbyyc')
-               
+```              
 Excute command
 
 PyInstaller Calculator@stuffbyyc.spec
@@ -70,16 +71,16 @@ PyInstaller Calculator@stuffbyyc.spec
 You can pack you application using Nsis tool
 additional details : https://kivy.org/doc/stable/guide/packaging-android.html
 
-#---------------To Create iOS Application from Kivy-----------------
+## ---------------To Create iOS Application from Kivy-----------------
 
 https://kivy.org/doc/stable/guide/packaging-ios.html
 
-#---------------To Create OS X Application from Kivy-----------------
+## ---------------To Create OS X Application from Kivy-----------------
 
 https://kivy.org/doc/stable/guide/packaging-osx.html
 
 
--------------Applications--------------------------
+## -------------Applications--------------------------
 https://www.stuffbyyc.com/ 
 Android : https://www.amazon.com/gp/product/B085RZMF6T
 Windows : http://wix.to/xsD9CEc
