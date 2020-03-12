@@ -49,7 +49,7 @@ Execute below command in the folder where your python, kivy and logo file are pr
 ```cmd
 $ PyInstaller --name Calculator@stuffbyyc --icon logo.ico -w main.py
 ```
-Edit Collect in Calculator@stuffbyyc.spec file 
+Edit Collect in ```cmd Calculator@stuffbyyc.spec``` file 
 Create a Folder named Final
 
 Add below statement to the coll:
@@ -84,8 +84,8 @@ https://kivy.org/doc/stable/guide/packaging-osx.html
 
 
 ### -------------Applications--------------------------
-**Website : https://www.stuffbyyc.com/ **
+**Website : https://www.stuffbyyc.com/8*
 
-**Android : https://www.amazon.com/gp/product/B085RZMF6T **
+**Android : https://www.amazon.com/gp/product/B085RZMF6T**
 
-**Windows : http://wix.to/xsD9CEc **
+**Windows : http://wix.to/xsD9CEc**
