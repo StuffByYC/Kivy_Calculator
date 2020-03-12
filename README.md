@@ -84,7 +84,7 @@ https://kivy.org/doc/stable/guide/packaging-osx.html
 
 
 ### -------------Applications--------------------------
-**Website : https://www.stuffbyyc.com/8*
+**Website : https://www.stuffbyyc.com/**
 
 **Android : https://www.amazon.com/gp/product/B085RZMF6T**
 
