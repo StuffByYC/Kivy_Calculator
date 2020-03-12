@@ -11,11 +11,11 @@ python -m pip install pygame
 python -m pip install kivy
 
 ## ---------------To Create android Application from Kivy-----------------
-
+```cmd
 $ git clone https://github.com/kivy/buildozer.git
 $ cd buildozer
 $ sudo python setup.py install
-
+```
 Go to the folder where you have you python and kivy file
 
 $ buildozer init
